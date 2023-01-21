@@ -1,0 +1,27 @@
+public class StringExo2010Dylan {
+
+    public static void main(String[] args) {
+        String firstChaine = "règle,chaîne,programme,moteur,mots";
+        String scdChaine = "Une  des  règles  de  base  pour  qu’un  référencement  de  pages  Web  fournisse  des  résultats  intéressants  lors  d’une  recherche  via  un  moteur  de  recherche  consiste  à  s’assurer  que  des  mots-clés,  introduits  dans  l’en-tête  des  pages  Web, soient utilisés dans le contenu de la page Web.Ecrire un programme Java qui permet de calculer la fréquence d’apparition de mots  donnés  dans  un  texte.  Le  programme  fonctionnera  de  la  manière  simplifiée suivante : a.  Une  chaîne  de  caractères  est  saisie  avec  plusieurs  mots  séparés  par  des virgules. b.  Une  seconde  chaîne  est  saisie  et  représente  le  contenu  de  la  page  Web.c.   Votre programme va ensuite calculer et afficher le nombre d’apparitions de chaque mot de la 1ère chaîne dans le texte. ";
+
+        Exo(firstChaine, scdChaine);
+      }
+     public static void Exo (String first, String second){
+
+         String [] mots = first.split(",");
+         int [] nboccurence = new int [mots.length];
+         for (int i = 0; i<mots.length; i++){
+             System.out.println(mots[i]);
+         }
+         second = second.replace(',', ' ');
+         String []check = second.split(" ");
+         for (int i = 0; i<nboccurence.length; i++){
+             for (int j = 0; j<check.length; j++){
+                 if (check[j].contains(mots[i]))
+                     nboccurence[i]++;
+             }
+             System.out.println(mots[i] + " : " + nboccurence[i] + " occurences");
+         }
+
+     }
+  }

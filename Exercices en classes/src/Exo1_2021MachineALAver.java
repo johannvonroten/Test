@@ -1,0 +1,72 @@
+import java.util.*;
+public class Exo1_2021MachineALAver {
+
+    public static void main(String[] args) {
+        int choix = -1;
+        int celsius = 0;
+        boolean lance = false;
+        while (choix != 0){
+            choix = menu();
+            switch (choix){
+                case 1:
+                    celsius = choixTemperature();
+                    break;
+                case 2:
+                    if (celsius == 0)
+                        System.out.println("Une température doit être choisir pour lancer le lavage !");
+                    else{
+                        if (lance == false){
+                            System.out.println("Le lavage est lancé !");
+                            lance = true;
+                        }
+                        else{
+                            System.out.println("Le lavage est arrêté !");
+                            lance = false;
+                        }
+                    }
+                    break;
+                case 3:
+                    if (lance == true)
+                        celsius = modifieTemperature(celsius);
+                    else
+                        System.out.println("Impossible de modifier la température si le lavage n'est pas lancé !");
+            }
+        }
+    }
+   public static int menu (){
+       Scanner scan = new Scanner(System.in);
+       System.out.println("Appuyer sur le bouton");
+       System.out.println("1 pour le choix du programme de lavage (température à choisir)");
+       System.out.println("2 pour lancer/arrêter le lavage");
+       System.out.println("3 modifier la température");
+       System.out.println("0 pour quitter");
+       return scan.nextInt();
+       
+   }
+   public static int choixTemperature(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Choisir la température (entre 30 et 90) :");
+        int température = scan.nextInt();
+        while (température < 30 || température > 90){
+            System.out.println("Merci de sélectionner une température entre 30 et 90 !");
+            température = scan.nextInt();
+        }
+        return température;
+    }
+
+    public static int modifieTemperature(int temp){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Modifier la température de combien ?");
+        int modtemp = scan.nextInt();
+        int newtemp = temp + modtemp;
+        while (newtemp < 30 || newtemp > 90){
+            System.out.println("La température " + newtemp + " n'est pas disponible.");
+            System.out.println("Modifier la température de combien ?");
+            modtemp = scan.nextInt();
+            newtemp = temp+modtemp;
+        }
+        System.out.println("Température choisie : " + newtemp);
+        return newtemp;
+    }
+}
