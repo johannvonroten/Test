@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\sharg\OneDrive - HESSO\Ecole\Introduction à la programmation\01 - Workspace\.metadata\.plugins\org.eclipse.jdt.core
+601087174.index
+1865797976.index
+168690839.index
+2383761535.index
+3269168792.index
+2866456078.index
+142680785.index

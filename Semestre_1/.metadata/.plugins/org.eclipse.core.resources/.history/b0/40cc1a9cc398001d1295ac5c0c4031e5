@@ -1,0 +1,129 @@
+import java.util.Scanner;
+
+public class johannvonroten2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [][] decoupage = {{0,0,0,0,1},
+							{2,1,1,1,1},
+							{2,3,3,4,4},
+							{2,3,3,4,5},
+							{2,2,4,4,5},
+							{6,6,6,6,5}};
+		int [][] grilleJeuOK = {{1,4,2,3,2},
+								{2,3,5,4,1},
+								{5,4,1,2,3},
+								{1,2,3,4,1},
+								{3,4,1,5,3},
+								{1,2,3,4,2}};
+		
+		int [][] grilleJeuKO = {{1,3,2,4,2},
+								{2,3,4,4,1},
+								{5,4,2,2,3},
+								{1,2,3,4,1},
+								{3,3,1,5,3},
+								{1,2,3,4,2}};
+		
+//		affiche (decoupage);
+//		affiche (grilleJeuOK);
+//		affiche (grilleJeuKO);
+		calculeTailleZone (decoupage);
+		jeu (decoupage);
+
+		
+		}
+	public static void affiche(int [][] tab){
+//		Affichage
+        int i;
+
+        for (i=0; i< tab.length; i++){
+            for (int j=0; j< tab[0].length; j++){
+            System.out.print(tab[i][j] + "\t ");
+        }
+        System.out.println();
+    }
+        System.out.println();
+
+	}
+		
+	public static void calculeTailleZone(int [][] tab){
+		int choix;
+		Scanner scan = new Scanner(System.in);
+	       System.out.println("Quel zone choisissez vous ? 1=Rouge, 2=bleu, 3=vert, 4=jaune, 5=orange, 6=violet, 7=gris");
+	       choix = scan.nextInt();
+	
+           switch (choix){
+           case 1:
+        	   System.out.println("La zone " + choix + " a une taille de 4");
+               break;
+           case 2:
+        	   System.out.println("La zone " + choix + " a une taille de 5");
+               break;
+           case 3:
+        	   System.out.println("La zone " + choix + " a une taille de 5");
+               break;
+           case 4:
+        	   System.out.println("La zone " + choix + " a une taille de 4");
+               break;
+           case 5:
+        	   System.out.println("La zone " + choix + " a une taille de 5");
+               break;
+           case 6:
+        	   System.out.println("La zone " + choix + " a une taille de 3");
+               break;
+           case 7:
+        	   System.out.println("La zone " + choix + " a une taille de 4");
+               break;
+           default :
+				System.out.println ("La zone " + choix + " n'existe pas") ;
+				break;
+       }
+	}
+	
+	public static void jeu (int [][] tab){
+
+		int ligne=0, colonne=0, ctrlign=0, ctrcol=0, indice=0;
+		Scanner scan = new Scanner(System.in);
+		
+		while (ctrlign != 1) {
+	       System.out.println("Entrez la ligne ou vous voulez jouer (de 1 à 5)");
+	       ligne = scan.nextInt();
+	       if (ligne <= 5)
+	    	   ctrlign++;}
+	       
+		while (ctrcol != 1) {
+		       System.out.println("Entrez la colonne ou vous voulez jouer (de 1 à 6)");
+		       colonne = scan.nextInt();
+		       if (colonne <= 6)
+		    	   ctrcol++;} 
+		
+	    	indice = tab [ligne][colonne];
+		       System.out.println(indice);
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

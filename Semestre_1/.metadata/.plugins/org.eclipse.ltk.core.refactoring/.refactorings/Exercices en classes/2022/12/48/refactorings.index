@@ -1,0 +1,12 @@
+1669968902440	Delete element
+1669970884028	Rename local variable 'MonTableau'
+1669972888853	Delete element
+1669973885285	Rename type 'EuroMillionVx'
+1669974081278	Delete element
+1669975907373	Rename type 'ArrayDimension'
+1669977016332	Rename local variable 'total'
+1669977035542	Rename local variable 'additionLing'
+1670084031776	Rename local variable 'additionLigne'
+1670084571889	Rename local variable 'additionColone'
+1670084578677	Rename method 'sommeColone'
+1670084733563	Rename type 'MatriceArrayDimension'

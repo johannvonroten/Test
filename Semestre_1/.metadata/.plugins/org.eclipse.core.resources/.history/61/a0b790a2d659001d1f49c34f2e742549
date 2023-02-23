@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Exercice6Ch3Pythagore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+
+		int cote1, cote2, hypo, a=0, b=0, c=0, test = 0;
+		
+		System.out.println ("Coté 1 :");	
+		cote1 = scan.nextInt();
+		System.out.println ("Coté 2 :");	
+		cote2 = scan.nextInt();
+		System.out.println ("Hypoténuse :");	
+		hypo = scan.nextInt();		
+		
+		for (cote1 = 0 ; cote1<500 ; a++) {
+			(cote1*cote1) = (hypo*hypo)-(cote2*cote2);
+			++test;
+	
+		for (cote2 = 0 ; cote2<500 ; b++) {	
+			(cote2*cote2) = (hypo*hypo)-(cote1*cote1);
+			++test;
+
+		for (hypo = 0 ; hypo<500 ; c++) {	
+			(hypo*hypo) = (cote1*cote1)+(cote2*cote2);
+			++test;
+	
+		  }
+		 }
+		}
+		System.out.print ((a+b+c) + "sur" + test);
+
+	}
+}

@@ -1,0 +1,15 @@
+
+public class TransfertDeVin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int nb1=6, nb2=8, temp ;
+		nb1=5;
+		nb2=7;
+		temp=nb1;
+		nb1=nb2;
+		nb2=temp;
+
+	}
+
+}

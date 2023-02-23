@@ -1,0 +1,42 @@
+
+public class johannvonroten1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [][] billet =new int [3][2];		
+		int [] chiffres = {20000, 10000, 5000, 1000, 500, 200, 100, 50, 20, 10, 6, 4, 2};
+		
+		affiche (billet);	
+		remplitBillet (billet, chiffres);
+		affiche (billet);	
+
+
+	}
+	public static void affiche(int [][] tab){
+//		Affichage
+        int i;
+
+        for (i=0; i< tab.length; i++){
+            for (int j=0; j< tab[0].length; j++){
+            System.out.print(tab[i][j] + "\t ");
+        }
+        System.out.println();
+    }	
+	}
+	public static void remplitBillet(int [][] tab, int [] ch){
+		int i, no=0, borne =13;
+		
+        for (i=0; i< tab.length; i++){
+            for (int j=0; j< tab[0].length; j++){
+            	no = (int)(Math.random()*borne);
+            	tab[i][j] = ch [no];
+        }
+	
+	
+	
+	
+	
+	
+}
+	}
+}

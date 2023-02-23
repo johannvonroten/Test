@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Exercice6Ch3Pythagore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+
+		int a, b, hypo;
+		
+		System.out.println ("Coté 1 : Si c'est la réponse que vous cherchez tapez 0 ");	
+		a = scan.nextInt();
+		System.out.println ("Coté 2 : Si c'est la réponse que vous cherchez tapez 0 ");	
+		b = scan.nextInt();
+		System.out.println ("Hypoténuse : Si c'est la réponse que vous cherchez tapez 0 ");	
+		hypo = scan.nextInt();		
+		
+		for (a = 0 ; a<500 ; a++) {
+			System.out.print ("*");
+	
+		for (b = 0 ; b<500 ; b++) {	
+			System.out.print ("*");
+
+		for (hypo = 0 ; hypo<500 ; hypo++) {	
+			System.out.print ("*");
+	
+		  }
+		 }
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+public class TransfertDeVin {
+
+	public static void main(String[] args) {
+		//Créer les variables
+		Int nb1, nb2, temp ;
+		//Installation du « canal d’écoute »
+			Scanner saisie = new Scanner (System.in) ;
+		// saisie des chaines de charactères
+			String message ;
+			System.out.println (« entrer un message ») ;
+		message = saisie.nextlLine() ;
+		//Donner le valeurs (soit tout de suite nb1=5 soit ensuite)
+		System.out.println (“Entrer une 1ère valeur : ») ;
+		nb1=saisie.nextInt () ;
+		System.out.println (“Entrer une 2ème valeur : ») ;
+		Nb2=saisie.nextInt () ;
+		//Afficher les valeurs initiales
+		System.out.print («nb1 vaut : »+nb1) ; (affiche les messages sur la même ligne)
+		System.out.println (« nb2 vaut : »+nb2) ; (fait un retour à la ligne)
+		//échange (droite à gauche)
+		temp=nb1 ;
+		nb1=nb2 ;
+		nb2=temp ;
+		// afficher les valeurs après les échanges
+		System.out.println («Après l’échange ») ; 
+		System.out.print («nb1 vaut : »+nb1) ; 
+		System.out.println (« nb2 vaut : »+nb2) ;
+		//fermer le mécanisme d’écoute
+			saisie.close() ;

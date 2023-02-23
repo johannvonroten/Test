@@ -1,0 +1,89 @@
+import java.util.*;
+public class Exo2_2022 {
+
+	 public static void main(String[] args) {
+	        String [] coureurs = listeInitialeCoureurs();
+	        int[][]temps = listeTemps();
+	        afficheClassement(coureurs, temps);
+	        listePays(coureurs);
+	        prizeMoney(coureurs, temps);
+	    }
+	    public static String []listeInitialeCoureurs(){
+	        String []s = {"" ,
+	                "JACOBSEN Kristoffer (NOR)",
+	                "AERNI Luca (SUI)",
+	                "YULE Daniel (SUI)",
+	                "MOELGG Manfred (ITA)",
+	                "NEF Tanguy (SUI)",
+	                "RYDING Dave (GBR)",
+	                "NOEL Clément (FRA)",
+	                "RAZZOLI Giulano (ITA)",
+	                "READ Eric (CAN)",
+	                "BRAATHEN Lukas (NOR)",
+	                "GROSS Stefano (ITA)"} ;
+	        return s ;
+	    }
+	    public static int [][]listeTemps(){
+	        int [][]t = {{2886, 3},
+	                {2919, 8},
+	                {2923, 1},
+	                {2935, 5},
+	                {2939, 9},
+	                {2947, 2},
+	                {2986, 4},
+	                {3001, 10},
+	                {3012, 7},
+	                {3155, 6}} ;
+	        return t ;
+	    }
+	    public static void afficheClassement(String[]coureurs, int [][]temps){
+	        System.out.println("Start No" + "\t" + "Time" + "\t" + "Runner");
+	        for (int i = 0; i< temps.length; i++){
+	            System.out.println(temps[i][1] + "\t" + temps[i][0] + "\t" + coureurs[temps[i][1]]);
+	        }
+	        System.out.println();
+	    }
+	    public static void listePays (String[]coureurs){
+	        Scanner scan = new Scanner(System.in);
+	        int compteur = 0;
+	        System.out.println("Please enter a country code (3 digits) : ");
+	        String pays = scan.next();
+	        for (int i = 0; i< coureurs.length; i++){
+	            if (coureurs[i].contains(pays)){
+	                System.out.println(coureurs[i]);
+	                compteur++;
+	            }
+	        }
+	        if (compteur==0)
+	            System.out.println("No runner of this country");
+	        System.out.println();
+	    }
+	    public static void prizeMoney (String[]coureurs, int [][]temps){
+	        Scanner scan = new Scanner(System.in);
+	        int[][]finalTime = new int[5][2];
+	        boolean []check = new boolean[10];
+	        int time;
+	        int dossard;
+	        for(int i = 0; i< check.length; i++){
+	            if (i<5)
+	                check[temps[i][1]-1] = true;
+	            else
+	                check[temps[i][1]-1] = false;
+	        }
+	        for(int i = 0; i< finalTime.length; i++){
+	            System.out.println("Please enter the " + (i+1) + " time");
+	            time = scan.nextInt();
+	            finalTime[i][0] = time;
+	            do{
+	                System.out.println("Please enter the start number :");
+	                dossard = scan.nextInt();
+	            }while(check[dossard-1] == false);
+	            finalTime[i][1] = dossard;
+	        }
+	        System.out.println(coureurs[finalTime[0][1]] + " 25'000.-");
+	        System.out.println(coureurs[finalTime[1][1]] + " 12'500.-");
+	        System.out.println(coureurs[finalTime[2][1]] + " 7'000.-");
+	        System.out.println(coureurs[finalTime[3][1]] + " 3'500.-");
+	        System.out.println(coureurs[finalTime[4][1]] + " 2'000.-");
+	    }
+	}
