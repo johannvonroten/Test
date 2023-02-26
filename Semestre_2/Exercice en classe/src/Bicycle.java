@@ -1,9 +1,8 @@
 public class Bicycle {
-    public static void main(String[] args) {
 
-    }
     int speed = 0; // vitesse en km/h
     int gear = 1; // plateau
+
     void changeGear ( int newValue){
         gear = newValue;
     }
