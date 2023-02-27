@@ -3,8 +3,6 @@ public class Stereo {
 
     public void setVolume(int newVolume) {
         volume = newVolume;
-        oldVolume = volume;
-
     }
 
     public void setVolumeLeft(int newVolumeLeft) {
@@ -15,13 +13,13 @@ public class Stereo {
         VolumeRight = newVolumeRight;
     }
 
-    public void setMute(int newMute) {
-        setVolume(0);
-        mute = newMute;
+    public void setMute() {
+        oldVolume = volume;
+        volume=0;
     }
 
-    public void setUnmute(int newUnmute) {
-        unmute = newUnmute;
+    public void setUnmute() {
+        volume = oldVolume;
     }
 
     public int getVolume() {

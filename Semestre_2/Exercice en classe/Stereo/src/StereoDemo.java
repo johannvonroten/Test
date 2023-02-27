@@ -9,10 +9,10 @@ public class StereoDemo {
         stereo.setVolumeRight(51);
         System.out.println(stereo.toString());
 
-        stereo.setMute(0);
+        stereo.setMute();
         System.out.println(stereo.toString());
 
-        stereo.setUnmute(stereo.oldVolume);
+        stereo.setUnmute();
         System.out.println(stereo.toString());
 
     }
