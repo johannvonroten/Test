@@ -1,9 +1,11 @@
 public class Voiture {
+    int argus;
+    Roue roue;
+    Moteur moteur;
 
-    int roue, moteur;
-
-    public Voiture(int roue, int moteur) {
-        this.roue = roue;
-        this.moteur = moteur;
+    public Voiture(int cylindre, int chevaux, int size, double pressure, int argus) {
+        this.moteur = new Moteur(cylindre, chevaux);
+        this.roue = new Roue(size, pressure);
+        this.argus = argus;
     }
 }
