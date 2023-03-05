@@ -20,5 +20,13 @@ public class Key {
             System.out.println("The lock is closed");
         }
     }
+
+    public void close(Key key) {
+        if (key.reference == this.reference) {
+            System.out.println("The lock is open");
+        } else {
+            System.out.println("The lock is closed");
+        }
+    }
 }
 
