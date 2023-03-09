@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Art/Art.iml" filepath="$PROJECT_DIR$/Exercice en classe/Art/Art.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Asynchrone/Asynchrone.iml" filepath="$PROJECT_DIR$/Asynchrone/Asynchrone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Balloon/Balloon.iml" filepath="$PROJECT_DIR$/Exercice en classe/Balloon/Balloon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Banque/Banque.iml" filepath="$PROJECT_DIR$/Exercice en classe/Banque/Banque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Bicycle/Bicycle.iml" filepath="$PROJECT_DIR$/Exercice en classe/Bicycle/Bicycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Book/Book.iml" filepath="$PROJECT_DIR$/Exercice en classe/Book/Book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Cleanser/Cleanser.iml" filepath="$PROJECT_DIR$/Exercice en classe/Cleanser/Cleanser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Exercice en classe.iml" filepath="$PROJECT_DIR$/Exercice en classe/Exercice en classe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Gaufre/Gaufre.iml" filepath="$PROJECT_DIR$/Exercice en classe/Gaufre/Gaufre.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Geometrie/Geometrie.iml" filepath="$PROJECT_DIR$/Exercice en classe/Geometrie/Geometrie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/GumballMachine/GumballMachine.iml" filepath="$PROJECT_DIR$/Exercice en classe/GumballMachine/GumballMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Instrument/Instrument.iml" filepath="$PROJECT_DIR$/Exercice en classe/Instrument/Instrument.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/KarlaGarfield/KarlaGarfield.iml" filepath="$PROJECT_DIR$/Exercice en classe/KarlaGarfield/KarlaGarfield.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Lightsignal/Lightsignal.iml" filepath="$PROJECT_DIR$/Exercice en classe/Lightsignal/Lightsignal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Lock/Lock.iml" filepath="$PROJECT_DIR$/Exercice en classe/Lock/Lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Matriochka/Matriochka.iml" filepath="$PROJECT_DIR$/Exercice en classe/Matriochka/Matriochka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticalWork/PracticalWork.iml" filepath="$PROJECT_DIR$/PracticalWork/PracticalWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticalWork/Restaurant/Restaurant.iml" filepath="$PROJECT_DIR$/PracticalWork/Restaurant/Restaurant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Semestre_2.iml" filepath="$PROJECT_DIR$/Semestre_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Stereo/Stereo.iml" filepath="$PROJECT_DIR$/Exercice en classe/Stereo/Stereo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Vie/Vie.iml" filepath="$PROJECT_DIR$/Exercice en classe/Vie/Vie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Voiture/Voiture.iml" filepath="$PROJECT_DIR$/Exercice en classe/Voiture/Voiture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice en classe/VoitureCompo/VoitureCompo.iml" filepath="$PROJECT_DIR$/Exercice en classe/VoitureCompo/VoitureCompo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticalWork/W1Q3-2/W1Q3-2.iml" filepath="$PROJECT_DIR$/PracticalWork/W1Q3-2/W1Q3-2.iml" />
+    </modules>
+  </component>
+</project>

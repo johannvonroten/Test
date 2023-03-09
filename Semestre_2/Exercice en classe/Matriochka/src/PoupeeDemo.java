@@ -13,7 +13,6 @@ public class PoupeeDemo {
         Poupee p9 = new Poupee(8);
         Poupee p10 = new Poupee(9);
 
-
         p3.enfermer(p2);
         p10.enfermer(p3);
         p2.enfermer(p3);
