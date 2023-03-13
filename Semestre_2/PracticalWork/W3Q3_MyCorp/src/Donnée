@@ -1,0 +1,14 @@
+Furthermore, the following relationships are imposed:
+------------------------------------------------------------------------------------------------------------------------------------------
+ -A Company has one top level Function (in this case, the Chief Executive Officer)
+ -A Function has a relationship of responsibility to other Functions (for example, function Sales is responsible of Magazines and Books);
+ conversely, a Function is dependent to another Function (Magazines depends to Sales)
+ -Functions are grouped into Positions (for example the Division Directors position has the Sales, Procurement and Finance functions)
+ -Write a method displayDependency(Function f) that outputs the dependency of a function:
+    The employee Vincent Jaton depends from John Smith
+ Write a method displayResponsibilities(Function f) that outputs the responsabilities of a function:
+    The employe John Smith is responsible for
+        Vincent Jaton
+        Fabian Vernier
+        Marcel Jaquet
+ -For all classes, write a toString() method.

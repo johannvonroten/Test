@@ -26,6 +26,10 @@
       <module fileurl="file://$PROJECT_DIR$/Exercice en classe/Voiture/Voiture.iml" filepath="$PROJECT_DIR$/Exercice en classe/Voiture/Voiture.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercice en classe/VoitureCompo/VoitureCompo.iml" filepath="$PROJECT_DIR$/Exercice en classe/VoitureCompo/VoitureCompo.iml" />
       <module fileurl="file://$PROJECT_DIR$/PracticalWork/W1Q3-2/W1Q3-2.iml" filepath="$PROJECT_DIR$/PracticalWork/W1Q3-2/W1Q3-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticalWork/W2Q3_NewsPaper/W2Q3_NewsPaper.iml" filepath="$PROJECT_DIR$/PracticalWork/W2Q3_NewsPaper/W2Q3_NewsPaper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticalWork/W2Q3_Occurence/W2Q3_Occurence.iml" filepath="$PROJECT_DIR$/PracticalWork/W2Q3_Occurence/W2Q3_Occurence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticalWork/W3Q3_City/W3Q3_City.iml" filepath="$PROJECT_DIR$/PracticalWork/W3Q3_City/W3Q3_City.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticalWork/W3Q3_MyCorp/W3Q3_MyCorp.iml" filepath="$PROJECT_DIR$/PracticalWork/W3Q3_MyCorp/W3Q3_MyCorp.iml" />
     </modules>
   </component>
 </project>
