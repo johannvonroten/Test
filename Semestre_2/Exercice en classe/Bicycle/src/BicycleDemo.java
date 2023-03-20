@@ -1,15 +1,37 @@
 public class BicycleDemo {
     public static void main(String[] args) {
 
-        Bicycle bicycle1 = new Bicycle(1, 10);
-        Gourde gourde1 = new Gourde("Lait");
+        Gourd water = new Gourd("water") ;
+        Gourd milk = new Gourd("milk") ;
 
-        Tandem tandem1 = new Tandem(2,15);
-        Gourde gourde2 = new Gourde("Eau");
-        Gourde gourde3 = new Gourde ("RedBull");
+        Bicycle bike1 = new Bicycle(0,0, water); // creates Bicycle
+        Bicycle bike2 = new Bicycle(0,0, null);
+        Tandem tandem = new Tandem(0,0, null,null);
+        MountainBike mb = new MountainBike(0,0,0, null);
+        RoadBike rb = new RoadBike(0,0,0, null);
 
 
-        System.out.println("La bicyclette est à la vitesse " + bicycle1.gear + " a une vitesse de " + bicycle1.speed + " km/h" + " et une gourde de " + gourde1.gourde);
-        System.out.println("Le tandem est à la vitesse " + tandem1.gear + " et va à " + tandem1.speed + "km/h, la première gourde contient de l'" + gourde2.gourde + " et la seconde contient du " + gourde3.gourde);
+        tandem.speedUp(10);      // invokes method on objects
+        tandem.changeGear(2);
+        tandem.speedUp(20);//// speed:10 gear:2 gourd:water
+        tandem.ride();
+        mb.ride();
+
+
+        tandem.printStates();// speed:20 gear:3 gourd:milk
+
+        Bicycle [] garage = new Bicycle[3] ;
+        garage[0] = new MountainBike(2,4,0, null) ;
+        garage[1] = new RoadBike(6,0,2, null) ;
+        garage[2] = new Tandem(4,0, null, null) ;
+// I use all my bicycle
+        for (Bicycle b : garage) // this is the program
+            b.ride() ; // this is a difficult algorithm
+
+
+
+
+
+
     }
 }
